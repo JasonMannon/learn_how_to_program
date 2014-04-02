@@ -1,0 +1,14 @@
+<h1>Hello Lessons!</h1>
+
+<ul>
+  <% @lessons.each do |lesson| %>
+  <li><a href="/lessons/<%= lesson.id %>"><%= lesson.name %> </li>
+  <% end %>
+</ul>
+
+
+<button class="btn btn-success">
+<a href="/lessons/new">Create a new lesson</a>
+</button>
+
+<button type="button" class="btn btn-danger">Primary</button>

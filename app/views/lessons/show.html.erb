@@ -1,0 +1,15 @@
+<h1>Here is your lesson!</h1>
+
+<h3> <%= @lesson.name %> </h3>
+
+<p><%= @lesson.description %></p>
+
+<p><a href="/lessons/<%= @lesson.id %>/edit">Click here to edit your lesson</a></p>
+
+<p><a href="/lessons/<%= @lesson.id %>"
+    data-confirm="Foshizzle?"
+    data-method="delete"
+    rel="nofollow">Delete</a></p>
+
+<p><a href="/lessons">Return to main lesson menu</a></p>
+
